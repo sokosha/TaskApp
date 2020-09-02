@@ -23,6 +23,10 @@ textarea {
   margin-bottom: 10px;
 }
 
+.jumbotron {
+  background-color: transparent;
+}
+
 /* タイポグラフィ */
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,22 +38,28 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  font-style: italic;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
+  font-size: 3em;
+  letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: #inherit;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  text-align: center;
 }
 
+.button_wrapper{
+  text-align: center;
+}
 /* ヘッダー */
 
 #logo {
@@ -81,6 +91,7 @@ p {
 .navbar-inverse .navbar-nav > li > a:hover {
   color: silver;
 }
+
 /* デバッグウインドウ */
 
 .debug_dump {
