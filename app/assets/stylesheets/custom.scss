@@ -92,6 +92,29 @@ p {
   color: silver;
 }
 
+li.doropdown-header{
+  background-color: rgba(200,200,200,0.5);
+  font-weight: bold;
+  padding: 2px 20px;
+  color: #777777;
+  font-size: 12px;
+}
+
+.dropdown-header{
+    display: block;
+    padding: 2px 20px;
+    font-size: 12px;
+    line-height: 1.428571429;
+    color: #777777;
+    white-space: nowrap;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #008080;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover{
+  color: silver;
+}
 /* デバッグウインドウ */
 
 .debug_dump {
