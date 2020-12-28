@@ -1,0 +1,13 @@
+<div class="main tasks-new">
+  <div class="name">
+    <h1 class="form-heading">タスク編集</h1>
+    <%= form_tag update_task_path do %>
+    <div class="form">
+      <div class="form-body">
+        <textarea name="description"><%= @task.name %></textarea>
+        <input type="submit" value="保存">
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

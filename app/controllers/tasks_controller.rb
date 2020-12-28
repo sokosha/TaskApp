@@ -1,7 +1,8 @@
 class TasksController < ApplicationController
   
   def index
-    @tasks = Task.all
+     @user = User.find_by(params[:user_id])
+     @tasks = @user.tasks
   end
   
   def new
@@ -22,6 +23,22 @@ class TasksController < ApplicationController
 
   def show
     @task = Task.find(params[:id])
+  end
+  
+  def edit
+    @task = Task.find(params[:id])
+  end
+  
+  def update
+    @task = Task.find(params[:id])
+    if @task.update_attributes(task_params)
+       flash[:notice] = "タスクを更新しました"
+       redirect_to tasks_index_url
+    end
+  end
+  
+  def destroy
+    redirect_to tasks_index_url
   end
   
   private
