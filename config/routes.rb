@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   post   '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
   
+  post 'tasks/new' => "tasks#new"
   get 'tasks/index' => "tasks#index"
   get 'tasks/:id', to: 'tasks#show'
   get 'tasks/:id/edit', to: 'tasks#edit', as: :edit_task

@@ -38,7 +38,9 @@ class TasksController < ApplicationController
   end
   
   def destroy
-    redirect_to tasks_index_url
+    @task = Task.find(params[:id])
+    @task.destroy
+    redirect_to tasks_index_url 
   end
   
   private
